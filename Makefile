@@ -7,7 +7,7 @@ build:
 	docker build --no-cache --rm -t my_hiawatha .
 
 start:
-	docker run --name HIAWATHA -p 80:80 -d my_hiawatha
+	docker run --name HIAWATHA -p 50100:80 -d my_hiawatha
 
 stop:
 	docker stop HIAWATHA
